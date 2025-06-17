@@ -1,0 +1,12 @@
+name: Custom action
+
+on: [push]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Call custom action
+        uses: danibarbeira/actions-lesson5-challenge-custom-action@main
